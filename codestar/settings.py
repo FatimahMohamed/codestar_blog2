@@ -27,12 +27,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [
-    "8000-ajgreaves-blog-lesson-pl-mjfxnpd4ht.us2.codeanyapp.com",
-    ".herokuapp.com"
-]
+ALLOWED_HOSTS = ['.herokuapp.com','127.0.0.1',]
 
 
 # Application definition
@@ -94,8 +92,8 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://8000-ajgreaves-blog-lesson-pl-mjfxnpd4ht.us2.codeanyapp.com",
-    "https://*.herokuapp.com"
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com",
 ]
 
 # Password validation
